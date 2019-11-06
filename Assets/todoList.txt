@@ -1,0 +1,16 @@
+Game Design
+Thème : physique
+- Balle qui tombe
+- Cibles
+- Flèches
+- Tir
+
+Gameplay : Gravity Pong
+- Monde 3D
+- Raquette classique pilotée par le doigt
+- Murs sur les bords
+- Perdu quand un balle tombe
+- Différents types de balles
+- Une balle doit rebondir X fois (X = nombre affiché sur la balle)
+-
+
