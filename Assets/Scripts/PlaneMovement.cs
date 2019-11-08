@@ -6,15 +6,17 @@ public class PlaneMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1f;
 
+    private Material planeMaterial;
     private Renderer planeRenderer;
 
     private void Start() {
         planeRenderer = transform.GetComponent<Renderer>();
+        planeMaterial = planeRenderer.material;
     }
 
     private void Update() {
-        Vector2 offset = planeRenderer.material.GetTextureOffset("_BaseMap");
+        Vector2 offset = planeMaterial.GetTextureOffset("_BaseMap");
         offset -= Vector2.up * moveSpeed * Time.deltaTime;
-        planeRenderer.material.SetTextureOffset("_BaseMap", offset);
+        planeMaterial.SetTextureOffset("_BaseMap", offset);
     }
 }

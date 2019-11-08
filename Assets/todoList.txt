@@ -12,5 +12,21 @@ Gameplay : Gravity Pong
 - Perdu quand un balle tombe
 - Différents types de balles
 - Une balle doit rebondir X fois (X = nombre affiché sur la balle)
--
 
+
+TODO
+- Faire la Raquette - DONE
+- Faire le prefab de la balle - DONE
+- Faire les murs sur les côtés - DONE
+- Faire un compteur de rebond raquette par balle (à 0, la balle disparait) - DONE
+- Faire bouger la raquette avec le doigt - DONE
+- Limiter le mouvement de la raquette aux bords des murs - DONE
+
+- Faire plusieurs types de balles (Gros rebond, forte vitesse horizontale après rebond raquette) - IN PROGRESS
+
+- Faire spawner les balles au cours du temps
+- Limiter l'apparition des balles sur la verticale par rapport aux bords
+- Faire la condition de victoire et de défaite
+
+- Ajouter des particules à la disparition des balles
+- Faire exploser la raquette au game over
