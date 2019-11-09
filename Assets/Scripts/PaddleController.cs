@@ -6,8 +6,7 @@ public class PaddleController : MonoBehaviour
 {
     private Camera mainCamera = null;
 
-    [SerializeField] private float clampValueMin = -1f;
-    [SerializeField] private float clampValueMax = 1f;
+    [SerializeField] private float deltaPositionX = 1.9f;
 
     private void Awake() {
         mainCamera = Camera.main;
@@ -19,7 +18,7 @@ public class PaddleController : MonoBehaviour
 
             newPosition = mainCamera.ScreenToWorldPoint(newPosition);
             newPosition.y = transform.position.y;
-            newPosition.x = Mathf.Clamp(newPosition.x, clampValueMin, clampValueMax);
+            newPosition.x = Mathf.Clamp(newPosition.x, -deltaPositionX, deltaPositionX);
 
             transform.position = newPosition;
         }

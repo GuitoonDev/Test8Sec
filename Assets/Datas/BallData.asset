@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e6dc1a0af3ce6244bfa11de4d064d61, type: 3}
+  m_Name: BallData
+  m_EditorClassIdentifier: 
+  levelBallAvailabilityArray:
+  - availableLevel: 1
+    ballArray:
+    - {fileID: 2692590264411225738, guid: 799417f8a9a9e3b40931fff6bdb2d972, type: 3}
+  - availableLevel: 2
+    ballArray:
+    - {fileID: 8462231886831303643, guid: 0d3e2dd7dd75a6940b602d6baa8dacda, type: 3}
+  - availableLevel: 3
+    ballArray:
+    - {fileID: 2131940008172761411, guid: cb732de44ba40b04a9229ae7d3645607, type: 3}
+  - availableLevel: 5
+    ballArray:
+    - {fileID: 6819939048336620602, guid: 1ca07a4d08997e641b942448c95dda30, type: 3}
+  - availableLevel: 6
+    ballArray:
+    - {fileID: 2899343079078702248, guid: ec4f083fa572e6b42861c3229ec78e38, type: 3}
+  - availableLevel: 8
+    ballArray:
+    - {fileID: 7379366689998855186, guid: d9924b6e21e0f5c44a38cf71af7b0b8c, type: 3}
+  - availableLevel: 9
+    ballArray:
+    - {fileID: 6097920810849405056, guid: 0f6047028c586404594a778c13350256, type: 3}

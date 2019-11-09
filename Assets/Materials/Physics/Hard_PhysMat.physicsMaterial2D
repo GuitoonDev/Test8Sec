@@ -6,6 +6,6 @@ PhysicsMaterial2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HighBounce_PhysMat
-  friction: 0
-  bounciness: 0.95
+  m_Name: Hard_PhysMat
+  friction: 0.1
+  bounciness: 0

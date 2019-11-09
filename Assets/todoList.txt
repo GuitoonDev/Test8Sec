@@ -21,11 +21,11 @@ TODO
 - Faire un compteur de rebond raquette par balle (à 0, la balle disparait) - DONE
 - Faire bouger la raquette avec le doigt - DONE
 - Limiter le mouvement de la raquette aux bords des murs - DONE
+- Faire plusieurs types de balles (Gros rebond, forte vitesse horizontale après rebond raquette) - DONE
+- Limiter l'apparition des balles sur la verticale par rapport aux bords - DONE
 
-- Faire plusieurs types de balles (Gros rebond, forte vitesse horizontale après rebond raquette) - IN PROGRESS
+- Faire spawner les balles au cours du temps en fonction du nombre de rebonds à faire - IN PROGRESS
 
-- Faire spawner les balles au cours du temps
-- Limiter l'apparition des balles sur la verticale par rapport aux bords
 - Faire la condition de victoire et de défaite
 
 - Ajouter des particules à la disparition des balles

@@ -10,7 +10,7 @@ public class PlaneMovement : MonoBehaviour
     private Renderer planeRenderer;
 
     private void Start() {
-        planeRenderer = transform.GetComponent<Renderer>();
+        planeRenderer = GetComponent<Renderer>();
         planeMaterial = planeRenderer.material;
     }
 
