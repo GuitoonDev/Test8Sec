@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour
     public UnityAction OnBallDestroyed;
     public UnityAction OnGameOver;
 
+    private new Rigidbody2D rigidbody;
     private new Renderer renderer;
     private MaterialPropertyBlock colorPropertyBlock;
 
@@ -24,6 +25,7 @@ public class Ball : MonoBehaviour
     public int BouncesBeforeDestroy { get; private set; }
 
     private void Awake() {
+        rigidbody = GetComponent<Rigidbody2D>();
         renderer = GetComponent<Renderer>();
         colorPropertyBlock = new MaterialPropertyBlock();
 
@@ -46,6 +48,7 @@ public class Ball : MonoBehaviour
         renderer.SetPropertyBlock(colorPropertyBlock);
 
         counterText.text = BouncesBeforeDestroy.ToString();
+        rigidbody.velocity = new Vector2(Random.value * 5, rigidbody.velocity.y);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -61,7 +64,10 @@ public class Ball : MonoBehaviour
         }
         else if (other.gameObject.layer.Equals(destroyBallsLayer)) {
             Destroy(gameObject);
-            OnGameOver();
+
+            if (BouncesBeforeDestroy > 0) {
+                OnGameOver();
+            }
         }
     }
 }

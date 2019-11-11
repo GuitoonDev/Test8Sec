@@ -38,7 +38,7 @@ public class BallSpawner : MonoBehaviour
             Ball ballPrefabToSpawn = availableBallsList[Random.Range(0, availableBallsList.Count)];
             Ball newBall = Instantiate(ballPrefabToSpawn, transform.position, Quaternion.identity);
 
-            nextTimeToWait = Random.Range(newBall.BouncesBeforeDestroy - 0.1f * newBall.BouncesBeforeDestroy, newBall.BouncesBeforeDestroy + 0.1f);
+            nextTimeToWait = Random.Range(newBall.BouncesBeforeDestroy - 0.3f * newBall.BouncesBeforeDestroy, newBall.BouncesBeforeDestroy + 0.1f);
 
             float startPositionX = Random.Range(-spawnDelta, spawnDelta);
             startPositionX = (float) System.Math.Round(startPositionX, 1);
